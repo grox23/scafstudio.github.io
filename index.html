@@ -13,6 +13,29 @@
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <script>
+      $(window).on( "load", function()
+      {
+          $("#spinner").hide();
+      });
+      
+    </script>
+
+    <style>
+#spinner {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba( 255, 255, 255) 
+              url('img/loading.gif') 
+              50% 50% 
+              no-repeat;
+}
+</style>
+
 
     <body>
 
@@ -138,11 +161,5 @@
 
 
 
-    <script>
-      $(window).on( "load", function()
-      {
-          $("#spinner").hide();
-      });
-      
-    </script>
+  
 </html>
