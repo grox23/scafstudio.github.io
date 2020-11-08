@@ -14,6 +14,39 @@
     <link href="css/style.css" rel="stylesheet">
 
 
+    <script> 
+      window.dataLayer = window.dataLayer || []; 
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date()); 
+
+      gtag('config', 'UA-99755995-1'); 
+  </script>
+
+  <script>
+      $(window).on( "load", function()
+      {
+          $("#spinner").hide();
+      });
+      
+  </script>
+
+
+<style>
+  #spinner {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: rgba( 255, 255, 255) 
+                  url('https://grox23.github.io/scafstudio.github.io/img/loading.gif') 
+                  50% 50% 
+                  no-repeat;
+  }
+</style>
+
+
     <body>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
